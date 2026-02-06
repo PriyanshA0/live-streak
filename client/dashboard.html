@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Daily Quest</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to Daily Quest</h2>
+    <div id="playerIdentity" class="player-identity">
+      <div class="identity-main">
+        <span class="identity-label">🎮 Gamer Tag</span>
+        <span id="gamerTag" class="identity-value">Loading...</span>
+      </div>
+      <p class="identity-hint">Auto-generated pro handle for your streak legacy.</p>
+    </div>
+    <div id="userStats">
+      <span>🔥 Streak: <span id="streakCount">0</span></span>
+      <span>XP: <span id="xpCount">0</span></span>
+    </div>
+    <section id="streakChallenge">
+      <div class="streak-header">
+        <h3>LinkedIn Zip 100-Day Challenge</h3>
+        <span id="streakProgressLabel">0 / 100 days</span>
+      </div>
+      <div class="streak-progress">
+        <div id="streakProgressFill" class="streak-progress-fill"></div>
+      </div>
+      <div id="streakGrid" class="streak-grid"></div>
+    </section>
+    <div id="challengeCards">
+      <!-- Challenge cards will be rendered here -->
+    </div>
+    <div id="gameStatusBanner" class="game-status" aria-live="polite">
+      <span id="gameStatusText">Fetching game status...</span>
+    </div>
+    <div id="gameHeader" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <span id="timer" style="font-weight:bold;color:#ffd600;font-size:1.1em;">00:00</span>
+      <button id="resetPuzzleBtn" style="background:#23234a;color:#fff;border:none;padding:0.5em 1em;border-radius:6px;box-shadow:0 0 6px #00ffe7a0;cursor:pointer;">Reset</button>
+    </div>
+    <div id="gameArea">
+      <!-- Game UI (like puzzle) will be rendered here -->
+    </div>
+    <button id="logoutBtn">Logout</button>
+  </div>
+  <script src="js/config.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/puzzle.js"></script>
+</body>
+</html>
